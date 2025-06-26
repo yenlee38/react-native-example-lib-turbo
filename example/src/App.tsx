@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Result : {result}</Text>
       <Button title="Press" onPress={testNumberPromise} />
       <Text>Number: {value}</Text>
       <Text>Compare: {compareValue ? 'TRUE' : 'FALSE'}</Text>
