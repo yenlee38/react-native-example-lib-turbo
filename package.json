@@ -1,6 +1,6 @@
 {
   "name": "react-native-example-lib-turbo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "description how to using new turbo module IOS and Android ",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
