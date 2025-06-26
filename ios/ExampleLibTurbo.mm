@@ -1,4 +1,5 @@
 #import "ExampleLibTurbo.h"
+#import <React/RCTLog.h>
 
 @implementation ExampleLibTurbo
 RCT_EXPORT_MODULE()
@@ -8,6 +9,17 @@ RCT_EXPORT_MODULE()
 
     return result;
 }
+
+
+- (BOOL)compare:(NSNumber *)a b:(NSNumber *)b {
+    return [a isEqualToNumber:b];
+}
+
+
+- (void)numberPromise:(nonnull RCTPromiseResolveBlock)resolve reject:(nonnull RCTPromiseRejectBlock)reject { 
+    resolve(@(100));
+}
+
 
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
     (const facebook::react::ObjCTurboModule::InitParams &)params
